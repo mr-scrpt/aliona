@@ -1,0 +1,13 @@
+.page {
+  &_theme {
+    font: 14px / 2.14 "Open Sans", sans-serif;
+    color: red;
+    background: $color_white;
+  }
+  &__header {
+    background-color: $color_blue;
+  }
+  &__footer {
+    background-color: white;
+  }
+}

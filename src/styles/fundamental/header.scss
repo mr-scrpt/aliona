@@ -1,0 +1,26 @@
+.header {
+  &__inner {
+    display: flex;
+    text-align: center;
+  }
+
+  &__menu {
+    width: 40%;
+  }
+
+  &__logo {
+    width: 20%;
+  }
+
+  &__button {
+    width: 40%;
+  }
+}
+.page {
+  &__header {
+  }
+}
+.layout {
+  &__wrap {
+  }
+}

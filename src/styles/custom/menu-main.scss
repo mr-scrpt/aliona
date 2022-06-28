@@ -1,0 +1,73 @@
+.menu-main {
+  &__inner {
+    /*display: flex;*/
+  }
+
+  &__controller {
+    display: flex;
+    align-items: center;
+    @include bp994-block() {
+      display: none;
+    }
+  }
+
+  &__controller-icon {
+    display: flex;
+    align-items: center;
+  }
+
+  &__controller-text {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-left: 20px;
+    &_active {
+      //color: $color_gold;
+    }
+  }
+
+  &__list {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //background-color: $color_blue;
+    @include bp994-block() {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid transparent;
+    @include ts(border-color);
+    &:hover {
+      border-color: $color_yellow_dark;
+    }
+  }
+
+  &__item-text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    color: $color_white;
+
+    //color: $color_dark;
+
+    &:active {
+      color: $color_yellow_dark;
+    }
+    @include bp994-block() {
+      &:hover {
+        //color: $color_gold;
+      }
+    }
+    &_active {
+      //color: $color_gold;
+    }
+  }
+}
