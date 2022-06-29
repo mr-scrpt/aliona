@@ -316,11 +316,46 @@ button {
 /* Фундоментальные Блоки */
 .page_theme {
   font: 14px/2.14 "Open Sans", sans-serif;
-  color: red;
+  color: #fff;
   background: #fff;
 }
 .page__header {
   background-color: #0d082d;
+}
+.page__banner {
+  background: url("../img/banner_mob.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (min-width: 994px) {
+  .page__banner {
+    background: url("../img/banner.jpg") no-repeat;
+  }
+}
+.page__banner:after {
+  content: "";
+  position: absolute;
+  background: url("../img/banner_person_mob.png") no-repeat;
+  background-size: contain;
+  bottom: 0;
+  right: 0;
+  width: 360px;
+  height: 417px;
+}
+@media screen and (min-width: 994px) {
+  .page__banner:after {
+    background: url("../img/banner_person.png") no-repeat;
+    background-size: contain;
+    width: 994px;
+    height: 430px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .page__banner:after {
+    width: 1440px;
+    height: 623px;
+  }
 }
 .page__footer {
   background-color: white;
@@ -965,37 +1000,32 @@ button {
   height: auto;
 }
 
-.title__main {
-  font-weight: 600;
-  font-size: 26px;
-  line-height: 34px;
+.title__text {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffc700), to(#faff00));
+  background: -o-linear-gradient(top, #ffc700 0%, #faff00 100%);
+  background: linear-gradient(180deg, #ffc700 0%, #faff00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
 }
-@media screen and (min-width: 994px) {
-  .title__main {
-    font-size: 30px;
-    line-height: 37.5px;
+
+.title_main .title__text {
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: 800;
+}
+@media screen and (min-width: 768px) {
+  .title_main .title__text {
+    font-size: 42px;
+    line-height: 56px;
   }
 }
-.title__sub {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-}
 @media screen and (min-width: 994px) {
-  .title__sub {
-    font-size: 24px;
-    line-height: 30px;
-  }
-}
-.title__mini {
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 26px;
-}
-@media screen and (min-width: 994px) {
-  .title__mini {
-    font-size: 18px;
-    line-height: 22.5px;
+  .title_main .title__text {
+    font-size: 72px;
+    line-height: 100px;
   }
 }
 
@@ -1261,6 +1291,61 @@ button {
 .menu-main__item-text:active {
   color: #ffc700;
 }
+.banner__inner {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 994px) {
+  .banner__inner {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+}
+.banner__box {
+  position: relative;
+  z-index: 1;
+}
+@media screen and (min-width: 994px) {
+  .banner__box {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media screen and (min-width: 994px) {
+  .banner__title {
+    margin-bottom: 30px;
+  }
+}
+.banner__text {
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 150px;
+  max-width: 320;
+}
+@media screen and (min-width: 994px) {
+  .banner__text {
+    font-size: 32px;
+    line-height: 44px;
+    max-width: 580px;
+    margin-bottom: 50px;
+  }
+}
+.banner__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 994px) {
+  .banner__button {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 /* Навигация */
 * {
   -webkit-box-sizing: border-box;

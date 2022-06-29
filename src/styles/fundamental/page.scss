@@ -1,11 +1,42 @@
 .page {
   &_theme {
     font: 14px / 2.14 "Open Sans", sans-serif;
-    color: red;
+    color: $color_white;
     background: $color_white;
   }
   &__header {
     background-color: $color_blue;
+  }
+
+  &__banner {
+    background: url("../img/banner_mob.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    @include bp994-block() {
+      background: url("../img/banner.jpg") no-repeat;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      background: url("../img/banner_person_mob.png") no-repeat;
+      background-size: contain;
+      bottom: 0;
+      right: 0;
+      width: 360px;
+      height: 417px;
+      @include bp994-block() {
+        background: url("../img/banner_person.png") no-repeat;
+        background-size: contain;
+
+        width: 994px;
+        height: 430px;
+      }
+      @include bp1280-block() {
+        width: 1440px;
+        height: 623px;
+      }
+    }
   }
   &__footer {
     background-color: white;

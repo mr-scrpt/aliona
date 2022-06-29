@@ -1,0 +1,45 @@
+.banner {
+  &__inner {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    @include bp994-block() {
+      padding-top: 60px;
+      padding-bottom: 80px;
+    }
+  }
+  &__box {
+    position: relative;
+    z-index: 1;
+    @include bp994-block() {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+  }
+
+  &__title {
+    @include bp994-block() {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__text {
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 150px;
+    max-width: 320;
+    @include bp994-block() {
+      font-size: 32px;
+      line-height: 44px;
+      max-width: 580px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    @include bp994-block() {
+      justify-content: flex-start;
+    }
+  }
+}
