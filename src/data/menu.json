@@ -1,7 +1,7 @@
 {
 	"menu_main": [
 		{
-			"name": "",
+			"name": "Home",
 			"icon": "icon_home",
 			"href": "#"
 		},

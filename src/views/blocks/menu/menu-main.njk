@@ -4,9 +4,15 @@
 			<div class="menu-main__controller-icon">
 				<span class="icon icon_burger"></span>
 			</div>
-			<div class="menu-main__controller-text">Меню</div>
+			{# <div class="menu-main__controller-text">Меню</div> #}
 		</div>
 		<div class="block-s__body menu-main__list">
+			<div class="block-s__controller menu-main__closer">
+				<span class="icon icon_close"></span>
+			</div>
+			<div class="button button_size_l menu-main__button">
+				<div class="button__text">Register</div>
+			</div>
 			{% for item in menu.menu_main %}
 				{% include "blocks/menu/menu-main-item.njk" %}
 			{% endfor %}

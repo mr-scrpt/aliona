@@ -1,6 +1,8 @@
 .menu-main {
+  height: 100%;
   &__inner {
-    /*display: flex;*/
+    display: flex;
+    height: 100%;
   }
 
   &__controller {
@@ -27,26 +29,83 @@
   }
 
   &__list {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    //background-color: $color_blue;
+    //align-items: center;
+    background-color: $color_blue;
     @include bp994-block() {
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: flex-start;
       padding-top: 0;
       padding-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  &__closer {
+    margin-left: auto;
+    margin-right: 15px;
+  }
+  &__button {
+    margin-top: 30px;
+    align-self: center;
+    @include bp994-block() {
+      display: none;
     }
   }
   &__item {
+    position: relative;
     display: flex;
     align-items: center;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
     border-bottom: 2px solid transparent;
+
     @include ts(border-color);
+
+    &:nth-child(3) {
+      & .menu-main__item-text {
+        @include bp994-block() {
+          display: none;
+        }
+      }
+    }
     &:hover {
       border-color: $color_yellow_dark;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      bottom: 0;
+
+      background: linear-gradient(
+        270deg,
+        rgba(236, 35, 242, 0) 1.45%,
+        rgba(236, 35, 242, 0) 1.46%,
+        rgba(255, 255, 255, 0) 1.47%,
+        #ffcf01 101.45%
+      );
+      @include bp994-block() {
+        display: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+    @include bp994-block() {
+      padding: 10px 5px;
+      margin: 0 8px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 

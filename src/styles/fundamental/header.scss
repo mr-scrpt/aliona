@@ -2,18 +2,49 @@
   &__inner {
     display: flex;
     text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    @include bp994-block() {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
 
   &__menu {
-    width: 40%;
+    width: 22px;
+    @include bp994-block() {
+      width: 60%;
+    }
+    @include bp1280-block() {
+      width: 40%;
+    }
   }
 
   &__logo {
-    width: 20%;
+    width: calc(100% - 22px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include bp994-block() {
+      width: 20%;
+    }
+    @include bp1280-block() {
+      width: 20%;
+    }
   }
 
   &__button {
-    width: 40%;
+    display: none;
+
+    @include bp994-block() {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20%;
+    }
+    @include bp1280-block() {
+      width: 40%;
+    }
   }
 }
 .page {

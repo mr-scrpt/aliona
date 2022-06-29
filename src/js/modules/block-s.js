@@ -9,13 +9,15 @@ $(document).ready(() => {
   const $menuCollection = $(`.${mainClass}`);
   $menuCollection.each((idx, item) => {
     const $menu = $(item);
-    console.log("menu", $menu);
+
     const $parent = $menu.parent(".page__menu");
     let mobileSize = $(item).attr("data-adaptive-width");
     const $inner = $menu.children(`.${mainClass}__inner`);
     const $body = $inner.children(`.${mainClass}__body`);
     const $controller = $menu.find(`.${mainClass}__controller`);
-
+    const $closer = $menu.find(`.${mainClass}__closer`);
+    console.log("name", `.${mainClass}__closer`);
+    console.log("closer", $closer);
     /*const $outerMenuBlock = $(".menu-info");*/
     clearClassAndStyle($menu, $body, mainClass, mobileSize);
     controllMenu($controller, mainClass, mobileSize);
@@ -30,6 +32,12 @@ $(document).ready(() => {
       offsetBody($parent, $body, mobileSize);
       controllMenu($controller, mainClass);
     });
+
+    /*  $closer.on("click", () => {
+      console.log("click");
+      console.log($controller, mainClass, mobileSize);
+      controllMenu($controller, mainClass, mobileSize);
+    }); */
   });
 });
 

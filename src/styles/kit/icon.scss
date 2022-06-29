@@ -40,7 +40,22 @@
   width: 43px;
   height: 43px;
 }
+.icon.icon_burger {
+  mask-image: url("../img/icons/icon_burger.svg");
+  mask-repeat: no-repeat;
+  background: $color_white;
+  width: 21px;
+  height: 11px;
+}
 
+.icon.icon_close {
+  mask-image: url("../img/icons/icon_close.svg");
+  mask-repeat: no-repeat;
+  //background-color: red;
+  background: rgba($color_white, 100%);
+  width: 14px;
+  height: 14px;
+}
 /* .icon.icon_burger {
 	mask-image: url("../img/icon/icon_burger.svg");
 	background-color: red;
