@@ -1,5 +1,5 @@
 /* Библиотеки */
-@import "./lib/smartgrid.scss";
+@import "./lib/smart-grid.scss";
 
 /* INIT */
 @import "./preset/reset.scss";
@@ -32,6 +32,9 @@
 @import "./custom/logo.scss";
 @import "./custom/menu-main.scss";
 @import "./custom/banner.scss";
+@import "./custom/games.scss";
+@import "./custom/games-list.scss";
+@import "./custom/games-item.scss";
 
 /* Навигация */
 * {

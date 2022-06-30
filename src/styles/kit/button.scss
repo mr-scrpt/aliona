@@ -54,9 +54,11 @@
 
 /*Виды кнопок*/
 .button.button_view {
-  &_secondary {
+  &_action {
+    background: $graditn_yellow;
     & .button__text {
-      text-transform: none;
+      color: #000;
+      text-transform: uppercase;
       letter-spacing: normal;
       font-weight: 400;
     }
@@ -85,21 +87,12 @@
 
 /*M - Начало*/
 .button_size_m {
-  font-size: 14px;
-  line-height: 18px;
-  @include bp768-block() {
-    font-size: 16px;
-    line-height: 22 px;
-  }
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .button_size_m .button__text {
-  margin: 3px 12px;
-  @include bp768-block() {
-  }
-  @include bp994-block() {
-    margin: 7px 15px;
-  }
+  margin: 7px 40px;
 }
 /*M - КОНЕЦ*/
 
@@ -110,10 +103,6 @@
 }
 .button_size_l .button__text {
   margin: 10px 50px;
-
-  /* @include bp994-block() {
-    margin: 10px 50px;
-  } */
 }
 /*L - КОНЕЦ*/
 

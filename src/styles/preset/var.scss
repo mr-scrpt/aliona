@@ -3,6 +3,7 @@ $color_white: #fff;
 $color_blue: #0d082d;
 $color_yellow_dark: #ffc700;
 $color_yellow_light: #faff00;
+$graditn_yellow: linear-gradient(180deg, $color_yellow_light 0%, $color_yellow_light 20%, $color_yellow_dark 100%);
 /* TIME*/
 
 $th: 0.25s;
