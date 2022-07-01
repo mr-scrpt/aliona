@@ -8,4 +8,5 @@ export const data = {
   phone: JSON.parse(readFileSync(`${srcFolder}/data/phone.json`, "utf8")),
   social: JSON.parse(readFileSync(`${srcFolder}/data/social.json`, "utf8")),
   games: JSON.parse(readFileSync(`${srcFolder}/data/games.json`, "utf8")),
+  benefits: JSON.parse(readFileSync(`${srcFolder}/data/benefits.json`, "utf8")),
 };

@@ -1,0 +1,27 @@
+.benefits {
+  &__inner {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    @include bp1280-block() {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-right: 180px;
+      padding-left: 180px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__list {
+    @include row-flex();
+  }
+  &__item {
+    @include col();
+    @include size(12);
+    @include size-bp768(6);
+
+    margin-bottom: 15px;
+  }
+}

@@ -45,6 +45,7 @@
 		"gulp-webp-html-nosvg": "latest",
 		"gulp-webpcss": "latest",
 		"gulp-zip": "latest",
+		"htmlhint": "^1.1.4",
 		"sass": "latest",
 		"smart-grid": "^2.1.2",
 		"swiper": "latest",

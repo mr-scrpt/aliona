@@ -1,0 +1,13 @@
+<section class="benefits">
+  <div class="benefits__inner layout__wrap">
+    <div class="benefits__title title title_sub">
+      <div class="title__text">Lucky Stars Slot — best free online casino</div>
+       </div>
+    <div class="benefits__list">
+      {% for item in benefits.benefits_list %}
+      {% include "blocks/benefits/benefits-item.njk" %}
+      {% endfor %}
+
+    </div>
+  </div>
+</section>
