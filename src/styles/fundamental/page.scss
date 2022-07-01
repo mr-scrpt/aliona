@@ -5,6 +5,9 @@
     background: $color_white;
     background-image: url("../img/bg.jpg");
   }
+  &_overflow {
+    overflow: hidden;
+  }
   &__header {
     background-color: $color_blue;
   }

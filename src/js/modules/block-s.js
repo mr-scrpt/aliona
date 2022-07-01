@@ -75,11 +75,13 @@ const closeMenu = ($menu, mainClass) => {
   const $controllerText = $menu.find(`.${curretnClass}__controller-text`);
 
   if ($menu.hasClass(`${mainClass}_open`)) {
+    bodyOverRemoveClass();
     $menu.removeClass(`${mainClass}_open`);
     $menu.addClass(`${mainClass}_close`);
     $controllerIcon.removeClass(`icon_burger_active`);
     $controllerText.removeClass(`${curretnClass}__controller-text_active`);
   } else {
+    bodyOverAddClass();
     $menu.removeClass(`${mainClass}_close`);
     $menu.addClass(`${mainClass}_open`);
     $controllerIcon.addClass(`icon_burger_active`);
@@ -113,6 +115,13 @@ const closeOutsideMenu = ($body, mainClass) => {
 				$(item).addClass(`${mainClass}_close`);*/
     });
   });
+};
+
+const bodyOverAddClass = () => {
+  $(".page").addClass("page_overflow");
+};
+const bodyOverRemoveClass = () => {
+  $(".page").removeClass("page_overflow");
 };
 
 const clearClassAndStyle = ($menu, $body, mainClass, mobileSize) => {

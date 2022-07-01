@@ -3,22 +3,22 @@
 		{
 			"name": "Home",
 			"icon": "icon_home",
-			"href": "#"
+			"href": "/"
 		},
 		{
 			"name": "About Us",
 			"icon": "icon_about",
-			"href": "#"
+			"href": "/about.html"
 		},
 		{
 			"name": "Privacy Policy",
 			"icon": "icon_policy",
-			"href": "#"
+			"href": "/policy.html"
 		},
 		{
 			"name": "Contact Us",
 			"icon": "icon_contact",
-			"href": "#"
+			"href": "contact.html"
 		}
 	]	
 }
