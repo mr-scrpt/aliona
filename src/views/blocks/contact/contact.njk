@@ -1,0 +1,63 @@
+<section class="contact">
+  <div class="contact__inner layout__wrap">
+     <div class="contact__title title title_main">
+        <div class="title__text">
+          Contact us
+        </div>
+      </div>
+      <div class="contact__form form">
+        <form class="form__inner" action="./sender.php" method="post">
+
+          <div class="form__row">
+              {% set inject = {
+                  labelClass: "form__label",
+                  labelTitle: "Your name",
+                  labelName:"name",
+                  labelType:"text",
+                  labelPlaceholder:""
+                } %}
+              {% include "blocks/form/label.njk" %}
+          </div>
+
+          <div class="form__row">
+              {% set inject = {
+                  labelClass: "form__label",
+                  labelTitle: "Your email",
+                  labelName:"email",
+                  labelType:"email",
+                  labelPlaceholder:""
+                } %}
+              {% include "blocks/form/label.njk" %}
+          </div>
+
+          <div class="form__row">
+              {% set inject = {
+                  labelClass: "form__label",
+                  labelTitle: "Subject",
+                  labelName:"subject",
+                  labelType:"text",
+                  labelPlaceholder:""
+                } %}
+              {% include "blocks/form/label.njk" %}
+          </div>
+
+          <div class="form__row">
+              {% set inject = {
+                  labelClass: "form__label",
+                  labelTitle: "Your Message (optional)",
+                  labelName:"message",
+                  labelPlaceholder:""
+                } %}
+              {% include "blocks/form/label-area.njk" %}
+          </div>
+
+           <div class="form__row form__submit">
+              <div class="button button_size_l">
+                <div class="button__text">Submit</div>
+            </div>
+          </div>
+
+        </form>
+      </div>
+  </div>
+</section>

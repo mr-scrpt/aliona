@@ -1,6 +1,8 @@
 import * as flsFunctions from "./modules/functions.js";
 
 import "./modules/block-s.js";
+import "./modules/input.js";
+import "./modules/textarea.js";
 
 flsFunctions.isWebp();
 

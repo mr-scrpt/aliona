@@ -1,4 +1,4 @@
-.games {
+.contact {
   &__inner {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -16,5 +16,12 @@
       padding-right: 180px;
       padding-left: 180px;
     }
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__form {
   }
 }

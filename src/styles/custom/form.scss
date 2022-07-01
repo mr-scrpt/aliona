@@ -1,0 +1,13 @@
+.form {
+  &__inner {
+  }
+
+  &__row {
+    margin-bottom: 25px;
+  }
+
+  &__submit {
+    display: flex;
+    justify-content: center;
+  }
+}
