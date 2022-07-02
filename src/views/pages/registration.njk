@@ -1,0 +1,14 @@
+{% extends "layouts/layout.njk" %}
+
+{% block main %}
+
+	{% include "blocks/header/header.njk" %}
+
+  {% include "blocks/registration/registration.njk" %}
+	
+
+	{% set inject = {} %}
+
+	{% include "blocks/footer/footer.njk" %}
+
+{% endblock %}

@@ -1,0 +1,65 @@
+<section class="registration ">
+  <div class="registration__inner layout__wrap">
+     <div class="registration__title title title_main">
+        <div class="title__text">
+          Registration
+        </div>
+      </div>
+     <div class="registration__form form">
+      <form class="form__inner" action="./sender.php" action="post">
+
+        <div class="form__row form__row_split">
+
+          {% set inject = {
+              labelClass: "form__label form__label_l",
+              labelTitle: "First Name",
+              labelName:"name",
+              labelType:"text",
+              labelPlaceholder:"First Name"
+            } %}
+          {% include "blocks/form/label.njk" %}
+
+          {% set inject = {
+              labelClass: "form__label form__label_r",
+              labelTitle: "Last Name",
+              labelName:"name",
+              labelType:"text",
+              labelPlaceholder:"Last Name"
+            } %}
+          {% include "blocks/form/label.njk" %}
+
+        </div>
+
+        <div class="form__row">
+              {% set inject = {
+                  labelClass: "form__label",
+                  labelTitle: "Your email",
+                  labelName:"email",
+                  labelType:"email",
+                  labelPlaceholder:"Your Email"
+                } %}
+              {% include "blocks/form/label.njk" %}
+          </div>
+
+          <div class="form__row">
+              {% set inject = {
+                  labelClass: "form__label",
+                  labelTitle: "Your password",
+                  labelName:"password",
+                  labelType:"password",
+                  labelPlaceholder:"Your Password"
+                } %}
+              {% include "blocks/form/label.njk" %}
+          </div>
+
+           <div class="form__row form__submit">
+              <button class="button button_size_l">
+                <div class="button__text">Registration</div>
+            </button>
+          </div>
+
+      </form>
+     </div>
+      
+  </div>
+</section>
